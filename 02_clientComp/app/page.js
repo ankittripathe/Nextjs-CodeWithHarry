@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <h1 className="text-xl">Count:{count}</h1>
-       <button className="bg-red-600 rounded-md p-1" onClick={()=>{setCount(count+1)}}>
+      <button className="bg-red-600 rounded-md p-1" onClick={()=>{setCount(count+1)}}>
         Increment
       </button>
     </div>
