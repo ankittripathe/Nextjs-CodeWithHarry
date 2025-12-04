@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import fs from "fs/promises";
 
 export default function Home() {
-  // Yaha BackEnd wala logic likh skte ho, agar aapka server components hai toh.
+  // Yaha BackEnd wala logic likh skte ho, Agar aapka server components hai toh.
   console.log("Hey I am Ankit");
   let a = fs.readFile(".gitignore");
   a.then((e) => console.log(e.toString()));
