@@ -5,10 +5,12 @@ export const metadata = {
   description: "Creating API in Nextjs",
 };
 
-export default function RootLayout({ children }) {
+const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>{children}</body>
     </html>
   );
-}
+};
+
+export default RootLayout;
