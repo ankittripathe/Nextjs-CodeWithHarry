@@ -4,10 +4,11 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Facebook - Connect with the World",
-  description: "This is facebook and we can connect with the world using facebook",
+  description:
+    "This is facebook and we can connect with the world using facebook",
 };
 
-export default function RootLayout({ children }) {
+const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
@@ -17,4 +18,5 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
-}
+};
+export default RootLayout;

@@ -1,5 +1,4 @@
 import Script from "next/script";
-// 
 export const metadata = {
   title: "Contact Facebook - Connect with the World",
   description: "This is Contact Facebook Page",
