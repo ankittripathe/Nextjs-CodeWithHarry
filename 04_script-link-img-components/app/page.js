@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Home = () => {
   return (
-    <div className="container my-2 size-90 bg-red-300">
+    <div className="container my-2 size-80 bg-red-300">
       <Image
         className="mx-auto"
         width={800}
