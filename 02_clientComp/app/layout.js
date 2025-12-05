@@ -5,12 +5,11 @@ export const metadata = {
   description: "How to use client Components in Nextjs",
 };
 
-export default function RootLayout({ children }) {
+const RootLayout = ({ children }) => {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
-}
+};
+export default RootLayout;
