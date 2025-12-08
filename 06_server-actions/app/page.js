@@ -1,12 +1,19 @@
-'use client'
-import {submitAction} from "@/actions/form";
+"use client";
+import { submitAction } from "@/actions/form";
 import { useRef } from "react";
 
 const Home = () => {
-  let ref = useRef()
+  let ref = useRef();
+
   return (
     <div className="w-3/5 mx-auto my-10">
-      <form ref={ref}  action={(e)=>{submitAction(e); ref.current.reset()}}>
+      <form
+        ref={ref}
+        action={(e) => {
+          submitAction(e);
+          ref.current.reset();
+        }}
+      >
         <div>
           <label htmlFor="name">Name:</label>
           <input
@@ -16,6 +23,7 @@ const Home = () => {
             className="text-black bg-white rounded-xs ml-1 p-0.5"
           />
         </div>
+
         <div>
           <label htmlFor="add">Address:</label>
           <input
@@ -25,8 +33,11 @@ const Home = () => {
             className="text-black bg-white rounded-xs m-1 p-0.5"
           />
         </div>
+
         <div>
-          <button className="bg-red-600 rounded-md px-2 py-1" type="submit">Submit</button>
+          <button className="bg-red-600 rounded-md px-2 py-1" type="submit">
+            Submit
+          </button>
         </div>
       </form>
     </div>
