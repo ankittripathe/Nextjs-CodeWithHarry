@@ -3,15 +3,15 @@ import Navbar from "@/components/Navbar";
 import fs from "fs/promises";
 
 export default function Home() {
-  // Yaha BackEnd wala logic likh skte ho, Agar aapka server components hai toh.
+  // Notes:- Yaha BackEnd wala logic likh skte ho, Agar aapka server components hai like below.
   console.log("Hey I am Ankit");
   let a = fs.readFile(".gitignore");
   a.then((e) => console.log(e.toString()));
 
   return (
     <div>
-      <Navbar/>
-      <h1>I am a Components</h1>
+      <Navbar />
+      <h1 className="text-2xl text-center">I am a Components</h1>
     </div>
   );
 }
