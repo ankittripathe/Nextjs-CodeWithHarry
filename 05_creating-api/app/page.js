@@ -3,6 +3,7 @@
 const Home = () => {
   const handleClick = async () => {
     let data = { name: "Ankit", role: "Coder" };
+    console.log(data);
 
     let a = await fetch("api/add", {
       method: "POST",
@@ -18,7 +19,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1 className="text-xl font-bold">Next.js API routes demo</h1>
+      <h1 className="text-xl font-bold">Nextjs API Routes demo</h1>
       <button className="bg-red-500 rounded-md p-1" onClick={handleClick}>
         Click Me
       </button>
