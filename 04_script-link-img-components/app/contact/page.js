@@ -1,6 +1,7 @@
 import Script from "next/script";
+
 export const metadata = {
-  title: "Contact Facebook - Connect with the World",
+  title: "ContactPage - Facebook",
   description: "This is Contact Facebook Page",
 };
 
@@ -9,7 +10,7 @@ const contact = () => {
     <div>
       {/* Script Components */}
       <Script>{`alert('Welcome to Contact Page')`}</Script>
-      <h1>Contact Page</h1>
+      <h1 className="text-center text-2xl">Contact Page</h1>
     </div>
   );
 };
