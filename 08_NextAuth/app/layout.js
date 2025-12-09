@@ -1,14 +1,17 @@
 import "./globals.css";
+import SessionWrapper from "./components/SessionWrapper";
 
 export const metadata = {
-  title: "next auth",
-  description: "next auth.js in nextjs",
+  title: "NextAuth",
+  description: "NextAuth in Nextjs",
 };
 
 const RootLayout = ({ children }) => {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <SessionWrapper>
+        <body>{children}</body>
+      </SessionWrapper>
     </html>
   );
 };
