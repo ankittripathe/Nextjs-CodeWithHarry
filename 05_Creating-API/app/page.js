@@ -18,7 +18,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="text-center">
       <h1 className="text-xl font-bold">Nextjs API Routes demo</h1>
       <button className="bg-red-500 rounded-md p-1" onClick={handleClick}>
         Click Me
