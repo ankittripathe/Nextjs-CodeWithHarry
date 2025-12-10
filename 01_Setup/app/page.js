@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div className="text-center text-2xl">
       <h1>Home Page</h1>
@@ -8,4 +8,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
