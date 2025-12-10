@@ -1,3 +1,4 @@
+/*
 import { NextResponse } from "next/server";
 
 export function middleware(request) {
@@ -13,21 +14,22 @@ export function middleware(request) {
 };
 
 // See "Matching Paths" below to learn more
-// export const config = {
-//   matcher: "/about/:path*",
-// };
+export const config = {
+  matcher: "/about/:path*",
+};
+*/
 
 
 
 /*********************************************************************/
-// import { NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
-// export function middleware(request) {
-//   if (request.nextUrl.pathname.startsWith("/about")) {
-//     return NextResponse.rewrite(new URL("/", request.url));
-//   }
+export function middleware(request) {
+  if (request.nextUrl.pathname.startsWith("/about")) {
+    return NextResponse.rewrite(new URL("/", request.url));
+  }
 
-//   if (request.nextUrl.pathname.startsWith("/dashboard")) {
-//     return NextResponse.rewrite(new URL("/", request.url));
-//   }
-// }
+  if (request.nextUrl.pathname.startsWith("/dashboard")) {
+    return NextResponse.rewrite(new URL("/", request.url));
+  }
+}
