@@ -6,4 +6,4 @@ const SessionWrapper = ({ children }) => {
 };
 
 export default SessionWrapper;
-// Notes: Jaha par vi aap sessionprovide use kr rhe hoo aap ko client components banana padta hai.
+// Notes: Jaha par vi aap sessionprovide use kr rhe hoo Waha pe aapko client components banana padta hai.
