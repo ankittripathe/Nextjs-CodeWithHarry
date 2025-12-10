@@ -1,6 +1,6 @@
 "use client";
 
-const Home = () => {
+const HomePage = () => {
   const handleClick = async () => {
     let data = { name: "Ankit", role: "Coder" };
     console.log(data);
@@ -27,4 +27,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
