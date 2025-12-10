@@ -2,7 +2,7 @@
 import Navbar from "@/components/Navbar";
 import fs from "fs/promises";
 
-const Home = () => {
+const HomePage = () => {
   // Notes:- Yaha BackEnd wala logic likh skte ho, Agar aapka server components hai like below.
   console.log("Hey I am Ankit");
   let a = fs.readFile(".gitignore");
@@ -15,7 +15,7 @@ const Home = () => {
     </div>
   );
 };
-export default Home;
+export default HomePage;
 
 /*
 Notes: 
