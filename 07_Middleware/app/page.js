@@ -1,4 +1,6 @@
-const Home = () => {
+import React from "react";
+
+const HomePage = () => {
   return (
     <div className="text-3xl text-center">
       <h>Home Page</h>
@@ -6,4 +8,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
