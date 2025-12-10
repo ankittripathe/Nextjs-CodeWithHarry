@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <div className="container my-2 bg-lime-300 mx-auto">
@@ -11,7 +11,7 @@ const Home = () => {
           src="https://live.staticflickr.com/3716/11924762773_af69c9d5f4_z.jpg"
           alt="HomePage-Image"
         />
-        
+
         <h1 className="text-center text-xl text-black">Welcome, Home page</h1>
       </div>
 
@@ -19,7 +19,7 @@ const Home = () => {
         <Image
           className="mx-auto"
           width={600}
-          height={700}
+          height={600}
           src="https://live.staticflickr.com/3716/11924762773_af69c9d5f4_z.jpg"
           alt="HomePage-Image"
         />
@@ -30,4 +30,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

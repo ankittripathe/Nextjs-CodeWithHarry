@@ -5,7 +5,7 @@ export const metadata = {
   description: "This is About Facebook Page",
 };
 
-const about = () => {
+const AboutPage = () => {
   return (
     <div className="flex gap-20 text-black">
       <div className="container my-2 size-60 bg-lime-300 relative">
@@ -21,7 +21,7 @@ const about = () => {
       <div className="container my-2 size-60 bg-lime-300 relative">
         <Image
           fill={true}
-          className="mx-auto object-contain"  /* obejct contain */
+          className="mx-auto object-contain" /* obejct contain */
           src="https://live.staticflickr.com/3716/11924762773_af69c9d5f4_z.jpg"
           alt="AboutPage-Image"
         />
@@ -41,4 +41,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default AboutPage;
