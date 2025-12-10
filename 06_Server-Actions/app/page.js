@@ -2,7 +2,7 @@
 import { submitAction } from "@/actions/form";
 import { useRef } from "react";
 
-const Home = () => {
+const HomePage = () => {
   let ref = useRef();
 
   return (
@@ -44,4 +44,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
