@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-const Home = () => {
+const HomePage = () => {
   const [count, setCount] = useState(0);
   console.log("Run in Console Browser");
 
@@ -19,7 +19,7 @@ const Home = () => {
     </div>
   );
 };
-export default Home;
+export default HomePage;
 /*
 Next.js me By-default sab Server Components hai. Koie vi hook ko use krne ke liye usko client components bana padta hai. client components banane ke liye 'use client' mention krna hota hai at the top of the code.
 */
