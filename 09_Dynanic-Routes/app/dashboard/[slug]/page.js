@@ -2,7 +2,7 @@ import React from "react";
 
 const SlugPage = async ({ params }) => {
   const { slug } = await params;
-  console.log(slug);
+  console.log('slug =',slug);
   
   return <div>My DashBoard Post: {slug}</div>;
 };
