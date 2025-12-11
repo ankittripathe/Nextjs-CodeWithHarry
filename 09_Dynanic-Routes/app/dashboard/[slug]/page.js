@@ -2,9 +2,14 @@ import React from "react";
 
 const SlugPage = async ({ params }) => {
   const { slug } = await params;
-  console.log('slug =',slug);
-  
-  return <div>My DashBoard Post: {slug}</div>;
+  console.log("slug =", slug);
+
+  return (
+    <div>
+      <h1> My DashBoard Post: {slug}</h1>
+      <p className="text-red-600 text-xl">Check Console & Terminal as Well</p>
+    </div>
+  );
 };
 
 export default SlugPage;
