@@ -3,12 +3,11 @@ import React from "react";
 const SlugPage = async ({ params }) => {
   const { slug } = await params;
   console.log(slug);
-
-  return <div>My Post: {slug}</div>;
+  
+  return <div>My DashBoard Post: {slug}</div>;
 };
 
 export default SlugPage;
-
 
 /############### With Some Conditions ##################/;
 /*
