@@ -1,4 +1,4 @@
-"use client";
+"use client";   // mandetory to put this for client side 
 import { useState } from "react";
 
 const HomePage = () => {
