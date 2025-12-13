@@ -2,7 +2,7 @@
 
 const Navbar = () => {
   return (
-    <div className="flex justify-around bg-sky-800 py-2 text-xl mb-5 list-none">
+    <div className="flex justify-around bg-sky-800 py-2 text-2xl mb-35 list-none">
       <li>Home</li>
       <li>About</li>
       <li>Contact</li>
