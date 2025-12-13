@@ -10,7 +10,7 @@ const ContactPage = () => {
     <div>
       {/* Script Components */}
       <Script>{`alert('Welcome to Contact Page')`}</Script>
-      <Script>{`console.warn('I am Danger')`}</Script>
+      <Script>{`console.warn('Stay away from Danger')`}</Script>
       <h1 className="text-center text-2xl">Contact Page</h1>
     </div>
   );
