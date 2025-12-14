@@ -1,2 +1,2 @@
 ## Notes
-- Next Auth.js:- Is a Library used for Authentication.
+- Next Auth.js:- A Library used for Authentication.

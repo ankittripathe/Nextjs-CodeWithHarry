@@ -1,9 +1,9 @@
 "use client";
 import { useSession, signIn, signOut } from "next-auth/react";
 
-export default function Component() {
+const Component = () => {
   const { data: session } = useSession();
-  console.log('session =', session)
+  console.log("session =", session);
 
   if (session) {
     return (
@@ -18,22 +18,33 @@ export default function Component() {
       </div>
     );
   }
+
   return (
     <div className="text-center text-xl m-5">
       <h1>Not Signed In</h1>
+
+      <button
+        className="bg-sky-500 px-2 p-1 rounded-md mr-2"
+        onClick={() => signIn()}
+      >
+        Sign in as Github
+      </button>
+
       <button
         className="bg-orange-500 px-2 p-1 rounded-md"
-        onClick={() => signIn('github')}
+        onClick={() => signIn("github")}
       >
-          Sign in as Github
+        Sign in as Github
       </button>
 
       <button
         className="bg-lime-500 px-2 p-1 rounded-md ml-2"
-        onClick={() => signIn('google')}
+        onClick={() => signIn("google")}
       >
         Sign in as Google
       </button>
     </div>
   );
-}
+};
+
+export default Component;
