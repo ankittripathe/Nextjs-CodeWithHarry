@@ -7,10 +7,10 @@ export function middleware(request) {
   // return NextResponse.json({message: 'Hello from the about Page'})
 
   // Condition 2:- url me /about krte hi home page pe leke jaega.. aur url home ho jaega.
-  return NextResponse.redirect(new URL("/", request.url));
+  // return NextResponse.redirect(new URL("/", request.url));
   
   // Condition 3: url me /about hit krte home wale page open hoga but url me /about hi rhega
-  // return NextResponse.rewrite(new URL("/", request.url));
+  return NextResponse.rewrite(new URL("/", request.url));
 };
 
 // See "Matching Paths" below to learn more
@@ -18,7 +18,6 @@ export const config = {
   matcher: "/about/:path*",
 };
 */
-
 
 
 /*********************************************************************/

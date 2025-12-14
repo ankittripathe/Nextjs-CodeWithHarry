@@ -10,7 +10,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <nav className="flex justify-around py-2 bg-orange-700 text-xl mb-5">
+        <nav className="flex justify-around py-2 bg-orange-700 text-xl mb-50">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/dashboard">Dashboard</Link>
