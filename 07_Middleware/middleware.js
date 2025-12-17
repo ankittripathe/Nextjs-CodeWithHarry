@@ -20,7 +20,9 @@ export const config = {
 */
 
 
-/*********************************************************************/
+
+/###################### Condition rewrite  ##################################/
+/*
 import { NextResponse } from "next/server";
 
 export function middleware(request) {
@@ -30,5 +32,16 @@ export function middleware(request) {
 
   if (request.nextUrl.pathname.startsWith("/dashboard")) {
     return NextResponse.rewrite(new URL("/", request.url));
+  }
+}
+*/
+
+
+/**************************** Condition redirect ***********************************/
+import { NextResponse } from "next/server";
+
+export function middleware(request) {
+  if (request.nextUrl.pathname.startsWith("/about")) {
+    return NextResponse.redirect(new URL("/", request.url));
   }
 }
