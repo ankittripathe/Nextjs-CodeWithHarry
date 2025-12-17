@@ -24,7 +24,7 @@ const SlugPage = async ({ params }) => {
   // console.log(languages[1]);
 
   if (languages.includes(slug)) {
-    return <div>My Post: {slug}</div>;
+    return <div>My DashBoard Post: {slug}</div>;
   } else {
     return <div>Post not found</div>;
   }
