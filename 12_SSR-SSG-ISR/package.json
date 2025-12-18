@@ -1,5 +1,5 @@
 {
-  "name": "10_font-optimization",
+  "name": "12_ssr-ssg-isr",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,14 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "16.0.8",
+    "next": "16.0.10",
     "react": "19.2.1",
     "react-dom": "19.2.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
-    "eslint-config-next": "16.0.8",
+    "eslint-config-next": "16.0.10",
     "tailwindcss": "^4"
   }
 }
