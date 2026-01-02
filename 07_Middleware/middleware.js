@@ -8,10 +8,10 @@ export function middleware(request) {
 
   // Condition 2:- url me /about krte hi home page pe leke jaega.. aur url home ho jaega.
   // return NextResponse.redirect(new URL("/", request.url));
-  
+
   // Condition 3: url me /about hit krte home wale page open hoga but url me /about hi rhega
   return NextResponse.rewrite(new URL("/", request.url));
-};
+}
 
 // See "Matching Paths" below to learn more
 export const config = {
@@ -19,9 +19,7 @@ export const config = {
 };
 */
 
-
-
-/###################### Condition rewrite  ##################################/
+/###################### Condition rewrite  ##################################/;
 /*
 import { NextResponse } from "next/server";
 
@@ -35,7 +33,6 @@ export function middleware(request) {
   }
 }
 */
-
 
 /**************************** Condition redirect ***********************************/
 import { NextResponse } from "next/server";
