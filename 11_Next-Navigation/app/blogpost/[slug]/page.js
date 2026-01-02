@@ -9,7 +9,7 @@ const SlugPage = () => {
   // Aaise timer vi laga skte hai same route ke badd E wala route pe visit kr dega
   useEffect(() => {
     setTimeout(() => {
-      router.push("./signin");
+      router.push("/signin");
     }, 3500);
   }, []);
 

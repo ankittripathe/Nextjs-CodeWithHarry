@@ -2,17 +2,19 @@
 import { useSearchParams } from "next/navigation";
 
 const SearchParamWala = () => {
-  const searchparms = useSearchParams();
+  const searchParams = useSearchParams();
+
+  const blog = searchParams.get("blog");
+  const utmSource = searchParams.get("utm_source");
+
   return (
     <div className="mt-20">
       <h1>
-        Our Blog is {searchparms.get("blog")} and utm source is{" "}
-        {searchparms.get("utm_source")}
+        Our Blog is {blog} and utm source is {utmSource}
       </h1>
     </div>
   );
 };
-
 export default SearchParamWala;
 /*Notes:
  # useSearchparams use krne ke liye url me yahi type ka url hona chaiye
